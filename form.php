@@ -1,5 +1,4 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
 
     if (!empty($name)) {
@@ -7,5 +6,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Please enter a name.";
     }
-}
-?>
+
